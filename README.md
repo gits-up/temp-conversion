@@ -1,4 +1,4 @@
-# C-to-F-conversion
+# temp-conversion
 A very simple celsius to farenheit convertor.</br>
 Beginners can contribute for hackoctoberfest</br>
 
