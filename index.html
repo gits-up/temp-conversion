@@ -10,8 +10,11 @@
     <div class="container">
         <h1>Temperature Converter</h1>
         <div class="input-container">
-            <label for="celsius">Celsius:</label>
-            <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+            <select id="conversion-type" class="dropdown-box">
+                <option value="toFahrenheit">Celsius to Fahrenheit</option>
+                <option value="toCelsius">Fahrenheit to Celsius</option>
+            </select>
+            <input type="number" id="temperature" placeholder="Enter temperature in Celsius">
             <button id="convert">Convert</button>
         </div>
         <div class="result">
