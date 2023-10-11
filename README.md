@@ -1,8 +1,8 @@
 # temp-conversion
-A very simple celsius to farenheit convertor.</br>
-Beginners can contribute for hackoctoberfest</br>
+A very simple temperature convertor.</br>
+Beginners can contribute for [Hacktoberfest](https://hacktoberfest.com)</br>
 
 ## What you can do?
-Make it more clean, modular and beautiful.</br>
-Make it more responsive.</br>
-Add other temperature conversion,etc.
+- Make it more clean, modular and beautiful.
+- Make it more responsive.
+- Add other temperature conversion, etc.
