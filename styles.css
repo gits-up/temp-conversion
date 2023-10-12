@@ -59,7 +59,6 @@ button:hover {
     font-weight: bold;
     font-size: 18px;
 }
-
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
@@ -70,4 +69,7 @@ button:hover {
         /* Full width on smaller screens */
     }
 
+}
+.dropdown-box {
+    height: 30px;
 }
