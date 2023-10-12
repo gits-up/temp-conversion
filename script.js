@@ -10,36 +10,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const temperatureInput = document.getElementById("temperature");
     const convertButton = document.getElementById("convert");
     const resultText = document.getElementById("result-text");
-    const conversionTypeSelect = document.getElementById("conversion-type");
+    const fromTypeSelect = document.getElementById("conversion-from-type");
+    const toTypeSelect = document.getElementById("conversion-to-type");
 
     convertButton.addEventListener("click", function() {
-        const selectedOption = conversionTypeSelect.value;
+        const selectedFromOption = fromTypeSelect.value;
+        const selectedToOption = toTypeSelect.value;
         const temperature = parseFloat(temperatureInput.value);
 
         if (isNaN(temperature)) {
-            resultText.textContent = "Please enter a valid temperature in Celsius.";
-            return;
+            resultText.textContent = `Please enter a valid temperature in ${selectedFromOption}.`;
+        } else {
+            const resultTempFunction = tempFunctionMap(selectedFromOption, selectedToOption);
+            const resultTempValue = resultTempFunction(temperature);
+            resultText.textContent = `${temperature}${tempUnitMap(selectedFromOption)} is equal to ${resultTempValue.toFixed(2)}${tempUnitMap(selectedToOption)}`;
+
         }
-
-        if (selectedOption === "toFahrenheit") {
-            const fahrenheit = celsiusToFahrenheit(temperature)
-            resultText.textContent = `${temperature}°C is equal to ${fahrenheit.toFixed(2)}°F`;     
-
-        } else if (selectedOption === "toCelsius") {
-            const celsius = fahrenheitToCelsius(temperature)
-            resultText.textContent = `${temperature}°F is equal to ${celsius.toFixed(2)}°C`;     
-        }  
     });
 
-    conversionTypeSelect.addEventListener("change", function() {      
-        const selectedOption = conversionTypeSelect.value;
+    fromTypeSelect.addEventListener("change", function() {
+        const selectedFromOption = fromTypeSelect.value;
 
-        if (selectedOption === "toFahrenheit") {
-            temperatureInput.setAttribute("placeholder", "Enter temperature in Celsius");
-
-        } else if (selectedOption === "toCelsius") {
-            temperatureInput.setAttribute("placeholder", "Enter temperature in Fahrenheit");
-        }
+        temperatureInput.setAttribute("placeholder", `Enter temperature in ${selectedFromOption}`);
     });
 });
 
