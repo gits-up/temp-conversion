@@ -48,3 +48,7 @@ button {
     margin-top: 20px;
     font-weight: bold;
 }
+
+.dropdown-box {
+    height: 30px;
+}
