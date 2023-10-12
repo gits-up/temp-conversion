@@ -26,12 +26,16 @@ h1 {
 
 label {
     font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
 input[type="number"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
@@ -42,13 +46,30 @@ button {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
 }
 
 .result {
     margin-top: 20px;
     font-weight: bold;
+    font-size: 18px;
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
 
+    .container {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+}
 .dropdown-box {
     height: 30px;
 }
