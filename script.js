@@ -1,17 +1,12 @@
-function celsiusToFahrenheit(celsius) {
-    return (celsius * 9/5) + 32;
-}
-
-function fahrenheitToCelsius(fahrenheit) {
-    return (fahrenheit - 32) * 5/9;
-}
-
 document.addEventListener("DOMContentLoaded", function() {
+	const temperatureForm = document.getElementById("temperature-form")
     const temperatureInput = document.getElementById("temperature");
     const convertButton = document.getElementById("convert");
     const resultText = document.getElementById("result-text");
     const fromTypeSelect = document.getElementById("conversion-from-type");
     const toTypeSelect = document.getElementById("conversion-to-type");
+
+	temperatureForm.addEventListener("submit", (e) => e.preventDefault() );
 
     convertButton.addEventListener("click", function() {
         const selectedFromOption = fromTypeSelect.value;
@@ -24,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const resultTempFunction = tempFunctionMap(selectedFromOption, selectedToOption);
             const resultTempValue = resultTempFunction(temperature);
             resultText.textContent = `${temperature}${tempUnitMap(selectedFromOption)} is equal to ${resultTempValue.toFixed(2)}${tempUnitMap(selectedToOption)}`;
-
         }
     });
 
