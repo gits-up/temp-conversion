@@ -78,3 +78,6 @@ button:hover {
 .no-display{
     display: none;
 }
+#dark,#light{
+    cursor: pointer;
+}
