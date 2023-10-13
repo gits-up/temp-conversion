@@ -2,7 +2,7 @@
 
 Beginners can contribute for [Hacktoberfest](https://hacktoberfest.com)</br>
 </br><div style="text-align: center;">
-![Hacktoberfestlog](images\Hacktoberfestlogo.jpg)
+![Hacktoberfestlogo](images/Hacktoberfestlogo.png)
 </div>
 </br>
 
