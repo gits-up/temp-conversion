@@ -14,7 +14,9 @@ body {
 }
 
 h1 {
-    color: #333;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
 }
 
 .input-container {
@@ -72,4 +74,20 @@ button:hover {
 }
 .dropdown-box {
     height: 30px;
+}
+
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    font-size: larger;
+    position: fixed;
+    bottom: 0;
+}
+footer p:hover{
+    
+    background-color: black;
+    color:white;
 }
