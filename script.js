@@ -35,4 +35,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const dark = document.querySelector("#dark");
+const light= document.querySelector('#light');
+const to = document.querySelector("#to")
 
+dark.addEventListener("click", () => {   
+        dark.classList.toggle('no-display')
+        light.classList.toggle('no-display');
+        document.body.style.backgroundColor = 'black'
+        document.body.style.color = 'white';
+})
+light.addEventListener("click",() => {
+    dark.classList.toggle("no-display")
+    light.classList.toggle('no-display');
+    document.body.style.backgroundColor = 'white'
+    document.body.style.color = 'black';
+})
