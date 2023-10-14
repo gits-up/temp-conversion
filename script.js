@@ -39,15 +39,18 @@ const dark = document.querySelector("#dark");
 const light= document.querySelector('#light');
 const to = document.querySelector("#to")
 
-dark.addEventListener("click", () => {   
-        dark.classList.toggle('no-display')
-        light.classList.toggle('no-display');
-        document.body.style.backgroundColor = 'black'
+dark.addEventListener("click", () => {  
+if(dark.style.visibility=="visible"){
+        document.body.style.backgroundColor = 'white'
         document.body.style.color = 'white';
-})
-light.addEventListener("click",() => {
-    dark.classList.toggle("no-display")
-    light.classList.toggle('no-display');
-    document.body.style.backgroundColor = 'white'
-    document.body.style.color = 'black';
+        dark.style.visibility="hidden"
+        light.style.visibility="visible"
+       
+}})
+light.addEventListener("click",()=>{
+    document.body.style.backgroundColor = 'black'
+        document.body.style.color = 'black';
+        dark.style.visibility="visible"
+        light.style.visibility="hidden"
+    
 })

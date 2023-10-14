@@ -115,8 +115,6 @@ button:hover {
     border-radius: 3px;
 }
 
-
-
 .footerContainer{
     display: flex;
     justify-content: center;
@@ -127,8 +125,17 @@ button:hover {
     bottom: 0;
 }
 footer p:hover{
-    
+    cursor:default;
     background-color: black;
     color:white;
 }
 
+#dark{
+    cursor: default;
+    color:white;
+    visibility:hidden;
+}
+#light{
+    cursor: default;
+    visibility:visible;
+}
