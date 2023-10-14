@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="tempConversion.js"></script>
     <title>Temperature Converter</title>
 </head>
+
 <body>
     <nav id="darkMode">
         <span id="dark" class="">&#9788</span><span id="light" class="no-display">&#127769</span>
@@ -29,11 +31,13 @@
             </select>
             <input type="number" id="temperature" placeholder="Enter temperature in Fahrenheit">
             <button id="convert">Convert</button>
+            <div class="result">
+                <p id="result-text"></p>
+            </div>
         </div>
-        <div class="result">
-            <p id="result-text"></p>
-        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
