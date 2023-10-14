@@ -43,7 +43,6 @@ dark.addEventListener("click", () => {
 if(dark.style.visibility=="visible"){
         document.body.style.backgroundColor = 'white'
         document.body.style.color = 'white';
-<<<<<<< HEAD
         dark.style.visibility="hidden"
         light.style.visibility="visible"
        
@@ -54,14 +53,4 @@ light.addEventListener("click",()=>{
         dark.style.visibility="visible"
         light.style.visibility="hidden"
     
-=======
-        document.body.style.transition = 'ease-out 0.5s'
-})
-light.addEventListener("click",() => {
-    dark.classList.toggle("no-display")
-    light.classList.toggle('no-display');
-    document.body.style.backgroundColor = '#a8aaec'
-    document.body.style.color = 'black';
-    document.body.style.transition = 'ease-out 0.5s'
->>>>>>> b34b8bb8accea8a1847b8f93071e154f3ccc5683
 })
