@@ -26,6 +26,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 50px;
+    color: black;
 }
 
 @media (min-width: 768px) {
@@ -106,4 +107,11 @@ button:hover {
 .dropdown-box {
     height: 30px;
     border-radius: 3px;
+}
+
+.no-display{
+    display: none;
+}
+#dark,#light{
+    cursor: pointer;
 }
