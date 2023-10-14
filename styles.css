@@ -11,6 +11,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 400px;
+    color: black;
 }
 
 h1 {
@@ -77,6 +78,7 @@ button:hover {
 }
 
 
+
 .footerContainer{
     display: flex;
     justify-content: center;
@@ -91,3 +93,4 @@ footer p:hover{
     background-color: black;
     color:white;
 }
+
