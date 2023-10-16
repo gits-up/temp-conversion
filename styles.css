@@ -29,17 +29,16 @@ body {
     color: black;
 }
 
-@media (min-width: 768px) {
-    .container:hover {
-        background-color: #c5cccf;
-        transform: scale(1.1);
-    }
 
-    .container {
-        background-color: rgba(233, 228, 228, 0.477);
-        border-color: #142245;
-        transform: scale(1.05);
-    }
+.container:hover {
+    background-color: #c5cccf;
+    transform: scale(1.1);
+}
+
+.container {
+    background-color: rgba(233, 228, 228, 0.477);
+    border-color: #142245;
+    transform: scale(1.05);
 }
 
 
