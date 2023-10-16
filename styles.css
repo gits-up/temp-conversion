@@ -44,7 +44,13 @@ body {
 
 
 h1 {
-    color: #090909;
+
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+
+   
+
 }
 
 .input-container {
@@ -108,9 +114,27 @@ button:hover {
     border-radius: 3px;
 }
 
-.no-display{
-    display: none;
+.footerContainer{
+    display: flex;
+    justify-content: center;
 }
-#dark,#light{
-    cursor: pointer;
+.copyright{
+    font-size: larger;
+    position: fixed;
+    bottom: 0;
+}
+footer p:hover{
+    cursor:default;
+    background-color: black;
+    color:white;
+}
+
+#dark{
+    cursor: default;
+    color:white;
+    visibility:hidden;
+}
+#light{
+    cursor: default;
+    visibility:visible;
 }

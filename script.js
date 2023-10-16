@@ -67,12 +67,13 @@ dark.addEventListener('click', () => {
   light.classList.toggle('no-display');
   document.body.style.backgroundColor = 'black';
   document.body.style.color = 'white';
-  document.body.style.transition = 'ease-out 0.5s';
+ 
 });
 light.addEventListener('click', () => {
   dark.classList.toggle('no-display');
   light.classList.toggle('no-display');
   document.body.style.backgroundColor = '#a8aaec';
   document.body.style.color = 'black';
-  document.body.style.transition = 'ease-out 0.5s';
+
 });
+
