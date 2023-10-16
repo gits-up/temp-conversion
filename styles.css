@@ -35,8 +35,14 @@ body {
     color: black;
     padding-bottom: 30px;
 }
+#conversion-from-type {
+    box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+#conversion-to-type{
+    box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
 #temperature{
-    margin-top: 20px;
+
 }
 
 @media (min-width: 768px) {
