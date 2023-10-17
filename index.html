@@ -14,28 +14,28 @@
         <span id="dark" class="">&#9788</span><span id="light" class="no-display">&#127769</span>
     </nav>
     <div class="container">
-        <h1>Temperature Converter</h1>
+        <p class="p1">Temperature Converter</p>
         <div class="input-container">
-            <select id="conversion-from-type" class="dropdown-box">
+            <p class="p2">UNITS</p>
+            <select id="conversion-from-type" class="dropdown-box1">
                 <option value="Fahrenheit">Fahrenheit</option>
                 <option value="Celsius">Celsius</option>
                 <option value="Kelvin">Kelvin</option>
                 <option value="Rankine">Rankine</option>
             </select> 
-            <span id="to">to</span>
-            <select id="conversion-to-type" class="dropdown-box">
+            <p class="to">to</p>
+            <select id="conversion-to-type" class="dropdown-box2">
                 <option value="Fahrenheit">Fahrenheit</option>
                 <option value="Celsius" selected>Celsius</option>
                 <option value="Kelvin">Kelvin</option>
                 <option value="Rankine">Rankine</option>
             </select>
-            <input type="number" id="temperature" placeholder="Enter temperature in Fahrenheit">
+            <input type="number" class="dropdown-box3" id="temperature" placeholder="Enter temperature in Fahrenheit">
             <button id="convert">Convert</button>
-            <div class="result">
-                <p id="result-text"></p>
-            </div>
         </div>
-
+    </div>
+    <div class="result">
+        <p id="result-text"></p>
     </div>
     <script src="script.js"></script>
 </body>

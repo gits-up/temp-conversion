@@ -1,17 +1,6 @@
 body {
-    background-image: url(../54700.jpg);
-    background-repeat: no-repeat;
-    /* Prevent image repetition */
-    background-size: cover;
-    /* Cover the entire element */
-    background-position:  center;
-    /* Center both horizontally and vertically */
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    background-color: #a8aaec;
-    text-align: center;
-    position: relative;
-    background-image: -moz-repeating-radial-gradient();
+    background-image: linear-gradient(37deg, rgb(32, 218, 233),rgb(40, 21, 236));
+    height:900px;
 }
 
 
@@ -21,18 +10,76 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    height: 250px;
-    max-width: 400px;
+    height: 550px;
+    width:500px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 50px;
     color: black;
+    position:relative;
+    top:60px;
+    right:300px;
 }
+.p1{
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p2{
+    font-size: 40px;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dropdown-box1{
+    width:300px;
+    height:50px;
+    position: relative;
+    bottom:30px;
+    font-size: 20px;
+}
+.dropdown-box1:hover{
+    width:400px;
+    height:60px;
+    transition:all,1s,linear,1s;
+    border-color: #007BFF;
+}
+.to{
+    position:relative;
+    left:10px;
+    bottom: 70px;
+    font-size:50px ;
+
+}
+.dropdown-box2{
+    width:300px;
+    height:50px;
+    position: relative;
+    bottom:100px;
+    font-size: 20px;
+}
+.dropdown-box2:hover{
+    width:400px;
+    height:60px;
+    transition:all,1s,linear,1s;
+    border-color: #007BFF;
+}
+.dropdown-box3{
+    position:relative;
+    bottom:60px;
+    font-size: 20px;
+}
+
+
+
+
 
 
 .container:hover {
     background-color: #c5cccf;
     transform: scale(1.1);
+    transition: all,1s,ease-in-out,1s;
+    background-image: repeating-linear-gradient(249deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 32px),repeating-linear-gradient(307deg, transparent 0px, transparent 3px,rgb(255,255,255) 3px, rgb(255,255,255) 32px),linear-gradient(90deg, hsl(191,85%,78%),hsl(242.429,85%,78%),hsl(293.857,85%,78%),hsl(345.286,85%,78%),hsl(36.714,85%,78%),hsl(88.143,85%,78%),hsl(139.571,85%,78%));
 }
 
 .container {
@@ -40,6 +87,7 @@ body {
     border-color: #142245;
     transform: scale(1.05);
 }
+
 
 
 
@@ -77,6 +125,8 @@ button {
     margin-top: 10px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.2s;
+    position: relative;
+    bottom:20px;
 }
 
 button:hover {
@@ -88,7 +138,23 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(7, 0, 7);
+    color: greenyellow;
+    background-image: radial-gradient(circle at 90% 24%, rgba(209, 209, 209,0.04) 0%, rgba(209, 209, 209,0.04) 50%,rgba(160, 160, 160,0.04) 50%, rgba(160, 160, 160,0.04) 100%),radial-gradient(circle at 91% 63%, rgba(45, 45, 45,0.04) 0%, rgba(45, 45, 45,0.04) 50%,rgba(87, 87, 87,0.04) 50%, rgba(87, 87, 87,0.04) 100%),radial-gradient(circle at 17% 2%, rgba(124, 124, 124,0.04) 0%, rgba(124, 124, 124,0.04) 50%,rgba(117, 117, 117,0.04) 50%, rgba(117, 117, 117,0.04) 100%),linear-gradient(88deg, rgb(33, 20, 105),rgb(1, 15, 13));
+    height:630px;
+    width:500px;
+    position: relative;
+    left:850px;
+    bottom:570px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+}
+.result:hover{
+    height:660px;
+    width:550px;
+    transition: all,1s,ease-in-out,1s;
 }
 
 @media (max-width: 768px) {
