@@ -18,7 +18,7 @@
     </nav>
 
     <div class="container">
-        <h1>Temperature Converter</h1>
+        <h1 class="Heading">Temperature Converter</h1>
         <div class="input-container">
             <select id="conversion-from-type" class="dropdown-box">
                 <option value="Fahrenheit">Fahrenheit</option>
@@ -26,19 +26,20 @@
                 <option value="Kelvin">Kelvin</option>
                 <option value="Rankine">Rankine</option>
             </select> 
-            <span id="to">to</span>
+            <span id="to">TO</span>
             <select id="conversion-to-type" class="dropdown-box">
                 <option value="Fahrenheit">Fahrenheit</option>
                 <option value="Celsius" selected>Celsius</option>
                 <option value="Kelvin">Kelvin</option>
                 <option value="Rankine">Rankine</option>
             </select>
+        </div>
             <input type="number" id="temperature" placeholder="Enter temperature in Fahrenheit">
             <button id="convert">Convert</button>
             <div class="result">
                 <p id="result-text"></p>
             </div>
-        </div>
+      
 
     </div>
     <script src="script.js"></script>
