@@ -76,3 +76,9 @@ light.addEventListener('click', () => {
   document.body.style.color = 'black';
   document.body.style.transition = 'ease-out 0.5s';
 });
+
+function onMenuToggle(e) {
+  const navlinks = document.querySelector(".navLinks");
+  e.name = e.name === "menu" ? "close" : "menu";
+  navlinks.classList.toggle("left-[0%]");
+}
