@@ -21,6 +21,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
+
+
     height: 250px;
     max-width: 400px;
     cursor: pointer;
@@ -28,7 +30,6 @@ body {
     margin-top: 50px;
     color: black;
 }
-
 
 .container:hover {
     background-color: #c5cccf;
@@ -40,8 +41,6 @@ body {
     border-color: #142245;
     transform: scale(1.05);
 }
-
-
 
 h1 {
     color: #090909;
