@@ -17,28 +17,32 @@
 
 
 
-    <div class="container">
+   
 
-        9
-        <h1>Temperature Converter</h1>
-        <div class="input-container">
-            <select id="conversion-from-type" class="dropdown-box">
-                <option value="Fahrenheit">Fahrenheit</option>
-                <option value="Celsius">Celsius</option>
-                <option value="Kelvin">Kelvin</option>
-                <option value="Rankine">Rankine</option>
-            </select> 
-            <span id="to">to</span>
-            <select id="conversion-to-type" class="dropdown-box">
-                <option value="Fahrenheit">Fahrenheit</option>
-                <option value="Celsius" selected>Celsius</option>
-                <option value="Kelvin">Kelvin</option>
-                <option value="Rankine">Rankine</option>
-            </select>
-            <input type="number" id="temperature" placeholder="Enter temperature in Fahrenheit">
-            <button id="convert">Convert</button>
-            <div class="result">
-                <p id="result-text"></p>
+    <div class="card">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="card-inner">
+            <h1 class="dark light">Temperature Converter</h1>
+            <div class="input-container">
+                <select id="conversion-from-type" class="dropdown-box">
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                </select> 
+                <span id="to">to</span>
+                <select id="conversion-to-type" class="dropdown-box">
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius" selected>Celsius</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                </select>
+                <input type="number" id="temperature" placeholder="Enter temperature in Fahrenheit">
+                <button id="convert">Convert</button>
+                <div class="result">
+                    <p id="result-text"></p>
+                </div>
             </div>
         </div>
     </div>
