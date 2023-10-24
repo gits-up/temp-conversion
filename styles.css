@@ -7,7 +7,7 @@ body {
     background-position:  center;
     /* Center both horizontally and vertically */
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family:'Roboto', Arial, sans-serif;
     background-color: #a8aaec;
     text-align: center;
     position: relative;
@@ -29,6 +29,7 @@ body {
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 50px;
     color: black;
+   width: fit-content;
 }
 
 .container:hover {
@@ -51,6 +52,9 @@ h1 {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+select{
+    
 }
 
 label {
@@ -92,12 +96,17 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        display: relative;
+        overflow: hidden;
+      }
     h1 {
         font-size: 24px;
     }
 
     .container {
         width: 100%;
+
         /* Full width on smaller screens */
     }
 
