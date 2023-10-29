@@ -42,13 +42,14 @@ Click the "Fork" button at the top of this page. This action will create a copy 
 
 ## Step 2: Clone the repository
 
-Go to your GitHub account, open the forked repository, click on the "Code" button, and then click the "Copy to clipboard" icon.
+Go to your GitHub account, open the forked repository, click on the "Code" button, and then click the "Copy to clipboard" icon from either the `SSH` or `HTTPS` tab.
 
-Open your terminal and run the following command, replace  `"url copied"` with the copied URL:
+Open your terminal and run the following command, replace  `url copied` with the copied URL:
 
 ```shell
 git clone "url copied"
 ```
+The shell command should look like `git clone https://github.com/yourusername/temp-conversion.git`
 
 This will clone the forked repository to your local machine.
 
